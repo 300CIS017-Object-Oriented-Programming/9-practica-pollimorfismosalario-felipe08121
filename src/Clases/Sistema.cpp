@@ -34,26 +34,46 @@ void Sistema::inicializarDatos() {
     cout << endl <<"================================================" << endl;
     cout << "Iniciando Inicializacion." << endl;
     cout << "Inicializando datos........ " << endl;
-    cout << endl<< "[0/4] Inicializando empleados......." << endl;
+    cout << endl<< "[0/8] Inicializando empleados......." << endl;
+
     Empleado * empleado1 = new DesarrolladorJunior("Camilo Andres Perafan Ramos", 2000000);
-    cout << "[1/4] Empleado Creado." << endl;
-    Empleado * empleado2 = new DesarrolladorSenior("Luis Esteban Perafan Ramos", 8000000);
-    cout << "[2/4] Empleado Creado." << endl;
-    Empleado * empleado3 = new LiderTecnico("Juan Felipe Perafan Ramos", 10000000);
-    cout << "[3/4] Empleado Creado." << endl;
-    Empleado * empleado4 = new Tester("Thunder Levin", 1600000);
-    cout << "[4/4] Empleado Creado" << endl;
+    cout << "[1/8] Empleado Creado." << endl;
+    Empleado * empleado2 = new DesarrolladorJunior("Eren Yaeger", 1800000);
+    cout << "[2/8] Empleado Creado." << endl;
+
+    Empleado * empleado3 = new DesarrolladorSenior("Luis Esteban Perafan Ramos", 8000000);
+    cout << "[3/8] Empleado Creado." << endl;
+    Empleado * empleado4 = new DesarrolladorSenior("Nicole Demara", 7500000);
+    cout << "[4/8] Empleado Creado." << endl;
+
+    Empleado * empleado5 = new LiderTecnico("Juan Felipe Perafan Ramos", 10000000);
+    cout << "[5/8] Empleado Creado." << endl;
+    Empleado * empleado6 = new LiderTecnico("Juan Pablo Perafan Zuluaga", 15000000);
+    cout << "[6/8] Empleado Creado." << endl;
+
+    Empleado * empleado7 = new Tester("Thunder Levin", 1600000);
+    cout << "[7/8] Empleado Creado" << endl;
+    Empleado * empleado8 = new Tester("Enis del Carmen Ramos", 1700000);
+    cout << "[8/8] Empleado Creado" << endl;
 
     cout << endl <<"[0/4]Guardando empleados en el vector......" << endl;
 
     empleados.push_back(empleado1);
-    cout <<"[1/4] Empleado Guardado." << endl;
+    cout <<"[1/8] Empleado Guardado." << endl;
     empleados.push_back(empleado2);
-    cout <<"[2/4] Empleado Guardado." << endl;
+    cout <<"[2/8] Empleado Guardado." << endl;
     empleados.push_back(empleado3);
-    cout <<"[3/4] Empleado Guardado." << endl;
+    cout <<"[3/8] Empleado Guardado." << endl;
     empleados.push_back(empleado4);
-    cout <<"[4/4] Empleado Guardado." << endl;
+    cout <<"[4/8] Empleado Guardado." << endl;
+    empleados.push_back(empleado5);
+    cout <<"[5/8] Empleado Guardado." << endl;
+    empleados.push_back(empleado6);
+    cout <<"[6/8] Empleado Guardado." << endl;
+    empleados.push_back(empleado7);
+    cout <<"[7/8] Empleado Guardado." << endl;
+    empleados.push_back(empleado8);
+    cout <<"[8/8] Empleado Guardado." << endl;
 
     cout << endl << "Inicializacion Terminada."<< endl;
     cout << endl <<"================================================" << endl;
