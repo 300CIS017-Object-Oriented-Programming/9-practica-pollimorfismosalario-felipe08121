@@ -16,10 +16,10 @@ Sistema::~Sistema() {
     int tamano = empleados.size();
 
     cout << endl <<"================================================" << endl;
-    cout << endl << "Iniciando Destrucion." << endl;
+    cout << endl << "Iniciando Destrucion." << endl << endl;
 
-    cout << "Destruyeendo............" << endl;
-    cout << "[0/ "<< empleados.size()<< "] " <<"Destruyendo Empleado............" << endl;
+    cout << "Destruyendo............" << endl;
+    cout << endl <<"[0/"<< empleados.size()<< "] " <<"Destruyendo Empleados............" << endl << endl;
     for ( int i= 0; i < empleados.size(); i++) {
         delete empleados[i];
         cout << "[" << i << "/"<< tamano<< "] " <<"Empleado Destruido." << endl;
