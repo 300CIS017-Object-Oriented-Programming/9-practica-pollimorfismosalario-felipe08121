@@ -19,12 +19,12 @@ Sistema o--Empleado
 class Empleado{
 
 # String nombre
-# float salarioBase
+# double salarioBase
 
 + Empleado()
-+ Empleado( String nombre, float SalarioBase)
++ Empleado( String nombre, double SalarioBase)
 + ~Empleado()
-+ float calcularSalario()
++ double calcularSalario()
 + void mostrarInformacion()
 
 }
@@ -34,9 +34,9 @@ class DesarrolladorJunior{
     - float bono
     
     + DesarrolladorJunio()
-    + DesarrolladorJunior( String nombre, float SalarioBase)
+    + DesarrolladorJunior( String nombre, double SalarioBase)
     + ~DesarrolladorJunior()
-    + float calcularSalario()
+    + double calcularSalario()
     + void mostrarInformacion()
 }
 
@@ -45,9 +45,9 @@ class DesarrolladorSenior{
     - float bono
     
     + DesarrolladorSenior()
-    + DesarrolladorSenior( String nombre, float SalarioBase)
+    + DesarrolladorSenior( String nombre, double SalarioBase)
     + ~DesarrolladorSenior()
-    + float calcularSalario()
+    + double calcularSalario()
     + void mostrarInformacion()
 }
 
@@ -55,9 +55,9 @@ class LiderTecnico{
     
     - float bono
     + LiderTecnico()
-    + LiderTecnico( String nombre, float SalarioBase)
+    + LiderTecnico( String nombre, double SalarioBase)
     + ~LiderTecnico()
-    + float calcularSalario()
+    + double calcularSalario()
     + void mostrarInformacion()
 }
 
@@ -66,9 +66,9 @@ class Tester{
     - float bono
 
     + Tester()
-    + Tester( String nombre, float SalarioBase)
+    + Tester( String nombre, double SalarioBase)
     + ~Tester()
-    + float calcularSalario()
+    + double calcularSalario()
     + void mostrarInformacion()
 }
 
