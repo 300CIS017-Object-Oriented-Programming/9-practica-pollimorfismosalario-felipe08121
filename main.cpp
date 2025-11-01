@@ -1,16 +1,73 @@
 #include <iostream>
+#include "Sistema.h"
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+void menu() {
+
+    cout << endl << "======= Sistema de Nomina de Pagos ======" << endl;
+    cout << endl;
+    cout << "1. Mostrar informacion de los empleados (todos). " << endl;
+    cout << "2. Mostrar informacion de un empleado. " << endl;
+    cout << "3. Crear un Empleado. "<< endl;
+    cout << "4. Calcular la nomina total de la empresa. "<< endl;
+    cout << "-1. Salir del programa. " << endl;
+    cout << endl << "Elija una Opcion: ";
+
+}
+
+void menuSwitch(Sistema &sistemaMenu) {
+    int opcion;
+
+    do {
+        menu();
+        cin >> opcion;
+        switch (opcion) {
+            case 1: {
+                sistemaMenu.mostrarInformacionEmpleados();
+                break;
+            }
+
+            case 2: {
+                sistemaMenu.mostrarInformacionEmpleado();
+                break;
+            }
+
+            case 3: {
+                sistemaMenu.crearEmpleados();
+                break;
+            }
+
+            case 4: {
+                sistemaMenu.calcularNominaTotal();
+                break;
+            }
+
+            case -1: {
+                cout << endl << "Saliendo del programa.........." << endl;
+                break;;
+            }
+
+            default: {
+                cout << "Opcion Incorrecta, por favor intente otra vez. " << endl;
+                break;
+            }
+        }
     }
+    while (opcion !=-1);
+
+
+}
+
+int main() {
+
+
+    Sistema sistema;
+    menuSwitch( sistema );
+
+
+    cout << endl << "Aviso: Ha salido del programa." << endl;
+
+
 
     return 0;
-    // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
